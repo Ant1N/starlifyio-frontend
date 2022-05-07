@@ -1,0 +1,98 @@
+.about__sustainability {
+    .about__sustanability-card {
+        .card {
+            background-color: $grey-1 !important;
+        }
+    }
+
+    .about__enviromental {
+        .card {
+            max-width: 65%;
+
+            ul {
+                padding: 0 10px;
+
+                li {
+                    @include roboto-light(12px);
+                }
+            }
+        }
+    }
+}
+
+.about__cards {
+    margin-top: 25vh;
+}
+
+.about__mission {
+    img {
+        position: absolute;
+        max-width: 50%;
+        right: 5%;
+        margin-top: -5%;
+    }
+}
+
+.about__sustainability {
+    height: 70vh;
+
+    .about__enviromental {
+        .card {
+            position: absolute;
+            left: 27%;
+            margin-top: -25px;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .about__mission {
+        .card {
+            width: 80%;
+        }
+
+        .about__image {
+            img {
+                margin-top: -2%;
+                max-width: 40%;
+            }
+        }
+    }
+    .about__cards {
+        margin-top: 30vh;
+
+        .card {
+            width: 90%;
+            margin-right: 20px;
+            margin-left: auto;
+        }
+    }
+    .about__sustainability {
+        height: 40vh;
+
+        .about__sustanability-card {
+            .card {
+                width: 70%;
+            }
+        }
+
+        .about__enviromental {
+            .card {
+                width: 50%;
+                left: 42%;
+            }
+        }
+    }
+}
+
+@media (min-width:1025px) {
+    .site__container {
+        .about_header {
+            height: 45vh;
+        }
+
+    }
+    .about__cards {
+        margin-top: 60vh;
+    }
+}

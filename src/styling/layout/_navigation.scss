@@ -1,0 +1,107 @@
+.navbar {
+    padding: 0;
+
+    &.bg-dark {
+        background-color: transparent !important;
+    }
+
+    .container {
+        justify-content: space-between;
+        padding: 0;
+
+        .navbar-toggler {
+            z-index: 1;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            border: none;
+            background-color: $grey-2;
+            border-radius: 100px;
+            padding: 10px;
+        }
+
+        .navbar-brand {
+            z-index: 1;
+            margin-top: 5%;
+            margin-left: 20px;
+        }
+    }
+
+    .navbar-collapse {
+        height: 70vh;
+        background-color: $black !important;
+
+        .navbar-nav {
+            height: 100%;
+            margin: auto 20px;
+            justify-content: center;
+
+            .nav-link,
+            a {
+                @include roboto-light(24px);
+                color: white !important;
+                margin: 15px 0;
+                text-decoration: none;
+            }
+        }
+    }
+
+    .navbar-btn {
+        width: 180px;
+        margin-top: 30px;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .navbar {
+        .container {
+            max-width: 40%;
+            margin-left: auto;
+            margin-right: 0;
+        }
+
+        .navbar-collapse {
+            height: 50vh;
+            border-radius: 7px;
+
+            .navbar-nav {
+                margin: auto 50px;
+            }
+        }
+    }
+}
+
+@media (min-width:1025px) {
+    .navbar {
+        .container {
+            max-width: 100%;
+        }
+
+        .navbar-collapse {
+            height: 13vh;
+            background-color: transparent !important;
+
+            .me-auto {
+                margin-right: 7% !important;
+            }
+
+            .navbar-nav {
+                margin-left: auto;
+                margin-right: 30px;
+                align-items: center;
+
+                .nav-link,
+                a {
+                    margin: 0 7px;
+                    text-decoration: none;
+                    @include roboto-light(16px);
+                }
+            }
+        }
+
+        .navbar-btn {
+            width: 180px;
+            margin: 0 0 0 30px;
+        }
+    }
+}

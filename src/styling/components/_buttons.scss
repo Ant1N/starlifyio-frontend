@@ -1,0 +1,20 @@
+button {
+    padding: 0px 35px;
+    background-color: $btn-green;
+    border-radius: 25px;
+    color: $grey-1;
+    border: none;
+    line-height: 20px;
+  
+    p {
+      @include roboto-regular(14px);
+      margin: 12px;
+    }
+  }
+
+  @media (min-width:1025px) {
+    button {
+        width: 180px;
+        height: 40px;
+      }
+}

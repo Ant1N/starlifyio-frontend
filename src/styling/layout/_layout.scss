@@ -1,0 +1,16 @@
+.site__container {
+    margin: 8%;
+  }
+  
+  section {
+    margin-top: 15%;
+  }
+
+  @media (min-width: 768px) {
+    section {
+        margin-top: 8%;
+      }
+      .site__container {
+        margin: 5%;
+      }
+}

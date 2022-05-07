@@ -1,17 +1,28 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import { createRoot } from 'react-dom/client';
+import Home from './pages/Home';
+import About from './pages/About';
+import Insight from './pages/subpages/Insight';
+import IntergrationMetadata from './pages/subpages/IntergrationMetadata';
+import AgileDiscoverability from './pages/subpages/AgileDiscoverability';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import './styling/main.scss'
+import CrowdsourcedKnowledge from './pages/subpages/CrowdsourcedKnowledge';
+import QualityAssurance from './pages/subpages/QualityAssurance';
+const container = document.getElementById('root');
+const root = createRoot(container);
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+
+root.render(
+  <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/intergration-metadata" element={<IntergrationMetadata />} />
+      <Route path="/insight" element={<Insight />} />
+      <Route path="/agile-discoverability" element={<AgileDiscoverability />} />
+      <Route path="/crowdsourced-knowledge" element={<CrowdsourcedKnowledge />} />
+      <Route path="/quality-assurance" element={<QualityAssurance />} />
+    </Routes>
+  </BrowserRouter>,
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();

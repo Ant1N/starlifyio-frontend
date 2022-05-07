@@ -1,0 +1,66 @@
+.card {
+  padding: 10px;
+  border-radius: 7px;
+  vertical-align: middle;
+  -webkit-box-shadow: 6px 7px 6px 0px rgba(0, 0, 0, 0.45);
+  box-shadow: 6px 7px 6px 0px rgba(0, 0, 0, 0.45);
+  margin-top: 25px;
+
+  .textContainer {
+    margin: 10px;
+  }
+
+
+  &:nth-child(odd) {
+    background-color: $grey-2;
+  }
+
+  &:nth-child(even) {
+    background-color: $grey-1;
+  }
+}
+
+.component__pricing-card {
+  padding: 20px 0;
+  margin-top: 30px;
+  border-radius: 7px;
+  -webkit-box-shadow: 6px 7px 6px 0px rgba(0, 0, 0, 0.45);
+  box-shadow: 6px 7px 6px 0px rgba(0, 0, 0, 0.45);
+
+  .component__pricing-container {
+    margin: 20px;
+    .component__pricing-header {
+      h3 {
+        @include roboto-medium(16px);
+        margin: 0;
+      }
+
+      .component__pricing-price {
+        @include roboto-medium(24px);
+        margin: 0;
+      }
+    }
+
+    ul {
+      h4 {
+        @include roboto-medium(12px)
+      }
+
+      li {
+        @include roboto-light(12px)
+      }
+    }
+  }
+
+  &:nth-of-type(1) {
+    background-color: #2F3135;
+  }
+
+  &:nth-of-type(2) {
+    background-color: #434447;
+  }
+
+  &:nth-of-type(3) {
+    background-color: #616264;
+  }
+}

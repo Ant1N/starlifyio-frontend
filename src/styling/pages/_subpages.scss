@@ -1,0 +1,113 @@
+.subpages__container {
+    .subpage__header {
+        height: 100%;
+        max-width: 100%;
+        margin: auto;
+        button{
+            z-index: 1;
+            position: absolute;
+            padding: 0;
+            background-color: transparent;
+            color: white;
+            @include roboto-light(12px);
+            top: 5%;
+            left: 5%;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            object-fit: fill;
+            margin: 0;
+    
+        }
+    }
+    h3 {
+        margin-top: 5%;
+    }
+    img {
+        width: 100%;
+        margin: 20px 0;
+    }
+}
+
+.subpages__information-container {
+    margin-top: 10%;
+    .subpages__information-text{
+        margin: 0;
+        ul{
+            padding: 0 10px;
+            li{
+                line-height: 3vh;
+            }
+        }
+    }
+}
+
+.subpages__insight-views{
+    .subpages__information-media {
+        img {
+            margin: 10px 0;
+        }
+    }
+}
+@media (min-width: 768px) {
+    .subpages__container {
+        margin: 0 6%;
+        .subpage__header {
+            button{
+                top: 6%;
+                left: 10%;
+            }
+        }
+    }
+    .subpages__center-text-container {
+        margin-top: 10%;
+        text-align: center;
+        h1, h2 {
+            margin: 2%;
+        }
+    }
+    .subpages__insight-views {
+        display: flex;
+        justify-content: space-between;
+        .subpages__information-media {
+            max-width: 25vw;
+        }
+    }
+
+}
+
+@media (min-width:1025px) {
+    .subpages__container {
+        margin: 0 8%;
+        .subpage__header {
+            button{
+                top: 9%;
+                left: 7%;
+            }
+        }
+    }
+    .subpages__information-text {
+        width: 40%;
+        margin: auto;
+        text-align: center;
+    }
+    .subpages__information-container {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        .subpages__information-text{
+            text-align: left;
+            margin: 0;
+            ul{
+                li{
+                    line-height: 3vh;
+                }
+            }
+        }
+        .subpages__information-media {
+            max-width: 40%;
+        }
+    }
+}

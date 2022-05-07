@@ -1,0 +1,15 @@
+@mixin roboto-light($font-size) {
+    font-family: $roboto;
+    font-weight: 300;
+    font-size: $font-size;
+  }
+  @mixin roboto-regular($font-size) {
+    font-family: $roboto;
+    font-weight: 400;
+    font-size: $font-size;
+  }
+  @mixin roboto-medium($font-size) {
+    font-family: $roboto;
+    font-weight: 500;
+    font-size: $font-size;
+  }
