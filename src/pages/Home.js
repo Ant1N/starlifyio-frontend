@@ -16,8 +16,7 @@ function Home() {
 
   useEffect(() => {
     axios.get(baseURL).then((response) => {
-      console.log(response.data.attributes)
-      setContent(response.data.attributes);
+      setContent(response.data.data.attributes);
     });
   }, []);
 
@@ -29,9 +28,10 @@ function Home() {
       <Navbar></Navbar>
       <div className="site__container">
         <header className="homepage__header">
-          <h1>hej</h1>
+          <h1>{content.headerTitle}</h1>
           <p className="homepage__header-p">
-            hej          </p>
+          {content.headerDesc}          
+            </p>
           <Button text="Read more" className="homepage__header-btn" />
           <img
             src="https://2277117.fs1.hubspotusercontent-na1.net/hub/2277117/hubfs/starlify-logo-white.svg?t=1650358213141&width=860"
@@ -39,7 +39,7 @@ function Home() {
           ></img>
         </header>
         <section className="homepage__customers">
-          <h2>'hej' </h2>
+          <h2>{content.companiesTitle} </h2>
           <div className="homepage__customers-container">
             <div className="homepage__customers-images">
               <img
