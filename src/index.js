@@ -9,6 +9,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './styling/main.scss'
 import CrowdsourcedKnowledge from './pages/subpages/CrowdsourcedKnowledge';
 import QualityAssurance from './pages/subpages/QualityAssurance';
+
 const container = document.getElementById('root');
 const root = createRoot(container);
 

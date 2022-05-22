@@ -9,22 +9,19 @@ import AccordionInfo from '../components/AccordionInfo';
 import MeetingPlanner from '../components/MeetingPlanner';
 import axios from 'axios';
 
-const baseURL = "https://my-app-u2dmi.ondigitalocean.app/api/homepage?populate[body][populate]=%2a"
+const baseURL = "https://seal-app-5pked.ondigitalocean.app/api/homepage?"
 
 function Home() {
   const [content, setContent] = useState(null);
 
   useEffect(() => {
     axios.get(baseURL).then((response) => {
-      setContent(response.data.data.attributes.body);
+      console.log(response.data.attributes)
+      setContent(response.data.attributes);
     });
   }, []);
 
   if (!content) return null;
-
-  const headerTitle = content[0].headerTitle;
-  const headerBread = content[0].headerBread;
-  const companiesTitle = content[1].companiesTitle;
 
 
   return (
@@ -32,10 +29,9 @@ function Home() {
       <Navbar></Navbar>
       <div className="site__container">
         <header className="homepage__header">
-          <h1>{headerTitle}</h1>
+          <h1>hej</h1>
           <p className="homepage__header-p">
-            {headerBread}
-          </p>
+            hej          </p>
           <Button text="Read more" className="homepage__header-btn" />
           <img
             src="https://2277117.fs1.hubspotusercontent-na1.net/hub/2277117/hubfs/starlify-logo-white.svg?t=1650358213141&width=860"
@@ -43,7 +39,7 @@ function Home() {
           ></img>
         </header>
         <section className="homepage__customers">
-          <h2>{companiesTitle} </h2>
+          <h2>'hej' </h2>
           <div className="homepage__customers-container">
             <div className="homepage__customers-images">
               <img

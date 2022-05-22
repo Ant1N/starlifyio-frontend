@@ -1,6 +1,7 @@
 {
   "name": "starlify.io",
   "version": "0.1.0",
+  "homepage": "https://github.com/Ant1N/starlifyio-frontend",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.1.1",
@@ -23,6 +24,8 @@
     "webpack-cli": "^4.9.2"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -47,6 +50,7 @@
     ]
   },
   "devDependencies": {
-    "@babel/preset-react": "^7.16.7"
+    "@babel/preset-react": "^7.16.7",
+    "gh-pages": "^4.0.0"
   }
 }
