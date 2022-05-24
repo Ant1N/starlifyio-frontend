@@ -1,10 +1,25 @@
-# Getting Started with Create React App
+# Starlify-io frontend 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a "masther thesis" for my studies at Medieinstitutet. The purpose of the project was to find a headless CMS fulfilling my requirements. The project was made for Entiros Starlify, and is version 0.1.
 
-## Available Scripts
+The backbones of the project will be used as a template for future production ready websites, togheter with the headless CMS. To help content creators and marketers to make changes independant from developers.
+
+## Run app live
+
+The front-end is deployed to digitalocean, and you can visit the site at:
+https://starlifyio-tmbsc.ondigitalocean.app/
+
+API documentation can be found at:
+
+
+
+## Setup
 
 In the project directory, you can run:
+
+### `npm install`
+
+To install all the necessary dependencies and packages. 
 
 ### `npm start`
 
@@ -19,5 +34,16 @@ You may also see any lint errors in the console.
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Dependencies 
+
+- React 18.0.0
+- sass 1.49.11 
+- axios 0.27.2
+
+### other packages 
+
+- create-react-app
+- react-router-dom
+- react-dom
+- react-bootstrap
+- bootstrap
